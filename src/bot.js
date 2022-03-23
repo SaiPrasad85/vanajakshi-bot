@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { Client, MessageEmbed } = require('discord.js');
+const { Client } = require('discord.js');
 const client = new Client({intents: ["GUILDS","GUILD_MESSAGES","DIRECT_MESSAGES"]});
 const PREFIX = "!"
 client.on('ready', () => {
@@ -23,6 +23,9 @@ client.on('message', (message) => {
     if(message.content === 'vannu'){
         message.reply(`cheppu ${message.author} bava`)
     }
+    if(message.content === 'one plus one ae two vannu'){
+        message.reply(`yu plus me ae 3 ${message.author} bava`)
+    }
     
 
     
@@ -30,13 +33,13 @@ client.on('message', (message) => {
 
 
 
-const target = "953000077646000148"
+const target = "950119155460358154"
 const prefix = "!katha"
 
 
 client.on('messageCreate', (message) => {
     if(message.author.bot)return;
-    if(message.channelId == "953000042644516924"){
+    if(message.channelId == "956050280405925908"){
         if(message.content === "raama chilakamma"){
             client.users.cache.get(message.author.id).send(`hi ${message.author.username} bava, katha cheppava pleej`);
         }
