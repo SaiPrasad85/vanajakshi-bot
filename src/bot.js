@@ -63,11 +63,7 @@ client.on('guildMemberAdd', (member) => {
     channel.send(welcomemsg)
 })
 
-const modID = "950394249394917396"
-if(message.channel.type == 'DM' && message.author.id === "741332384087015444")
-{
-    client.channels.cache.get(modID).send(message.content).concat(`-By aparichitudu`)
-}
+
 
     
 client.login(process.env.Token)
