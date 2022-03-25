@@ -49,7 +49,7 @@ client.on('messageCreate', (message) => {
 
         if(message.content.includes(prefix)){
 
-            client.channels.cache.get(target).send(message.content.slice(prefix.length).concat(`-By ${message.author.username}`))
+            client.channels.cache.get(target).send(message.content.slice(prefix.length).concat(`-By aparichitudu`))
         }
     }
 });
@@ -63,6 +63,10 @@ client.on('guildMemberAdd', (member) => {
     channel.send(welcomemsg)
 })
 
+if(message.channel.type == 'DM' && message.author.id === "741332384087015444")
+{
+    client.channels.cache.get(target).send(message.content.slice(prefix.length).concat(`-By aparichitudu`))
+}
 
     
 client.login(process.env.Token)
