@@ -26,7 +26,12 @@ client.on('message', (message) => {
     if(message.content === 'one plus one ae two vannu'){
         message.reply(`yu plus me ae 3 ${message.author} bava`)
     }
-    
+    if(message.content == 'chilipi vannu'){
+        message.reply('siggu tho chachipothuna bava')
+    }
+    if(message.content === 'andarki good morning cheppamma vannu'){
+        message.reply(`ok ${message.author} bava, sugamano? ellavarkkum suprabhatam!`)
+    }
 
     
 })
